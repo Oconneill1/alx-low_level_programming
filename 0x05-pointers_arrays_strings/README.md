@@ -1,1 +1,1 @@
-Create a program that generates random valid passwords for the program 101-crackme
+Write a function that prints n elements of an array of integers, followed by a new line
