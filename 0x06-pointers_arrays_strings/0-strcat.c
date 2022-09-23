@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
-* _strcat - concatenantes 2 strings
+* _strcat - concatenates 2 strings
+*
 * @dest: destination array
 * @src: source array
+*
 * Return: destination array
 */
 
@@ -11,12 +13,13 @@ char *_strcat(char *dest, char *src)
 {
 	char *ptr = dest;
 
-	while (*ptr != 0)
-		ptr++;
-	while (*src != 0)
-		*ptr++ == *src++;
+		while (*ptr != 0)
+			ptr++;
 
-	*ptr = 0;
+		while (*src != 0)
+			*ptr++ =*src++;
 
-	return (dest);
+		*ptr = 0;
+
+		return (dest);
 }
