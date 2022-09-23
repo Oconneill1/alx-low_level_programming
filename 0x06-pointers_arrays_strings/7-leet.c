@@ -1,18 +1,32 @@
 #include "main.h"
 
 /**
-* leet - a leet function
-* @x: param x
-* Return: a string
+* leet - Encodes a string to 1337.
+* @str - The string to be encoded.
+*
+* Return: A pointer to the encoded string.
 */
 
-char *leet(char *x)
+char *leet(char *str)
 {
-	int a = 0, b, l = 5;
-	char tr[5] = {'A', 'E', 'O', 'T', 'L'}
-	CHAR TRW[5] = {'4', '3', '0', '7', '1'}
+	int indx1 =0, indx2;
 
-	while (x[a])
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+
+	while (str[indx1])
 	{
-		b = 0;
+	
+		for (indx2 = 0; indx2 <= 7; indx2++)
+		{
 
+			if (str[indx1] == leet[indx2] ||
+			    str[indx1] - 32 == leet[indx2])
+				str[indx1] = indx2 + '0';
+		}
+
+		indx1++;
+	}
+
+	
+	return (str);
+}

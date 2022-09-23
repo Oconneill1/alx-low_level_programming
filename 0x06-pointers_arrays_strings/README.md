@@ -1,1 +1,1 @@
-Write a function that copies a string
+Write a function that encodes a string into 1337
